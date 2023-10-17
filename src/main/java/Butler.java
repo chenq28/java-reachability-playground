@@ -1,5 +1,8 @@
 import org.apache.commons.collections.ListUtils;
 import java.util.ArrayList;
+import org.nd4j.util.ArchiveUtils;
+import java.io.File;
+
 
 public class Butler {
 
@@ -13,5 +16,10 @@ public class Butler {
         list2.add("World");
 
         System.out.println(ListUtils.union(list1, list2));
+                ArchiveUtils.unzipFileTo("./malicious_file.zip", "./unzipped/");
+        File f = new File("/tmp/evil.txt");
+        if (f.exists()) {
+            throw new Exception("Malicious file /tmp/evil.txt was created");
+        };
     }
 }
