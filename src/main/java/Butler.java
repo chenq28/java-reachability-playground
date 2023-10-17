@@ -4,7 +4,7 @@ import org.nd4j.util.ArchiveUtils;
 import java.io.File;
 
 
-public class Butler {
+public class Butler extends ButlerBase{
 
     public void welcome() {
 
