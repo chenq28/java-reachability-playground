@@ -8,7 +8,5 @@ public class Unzipper {
         butler.welcome();
         // https://app.snyk.io/vuln/SNYK-JAVA-ORGND4J-72550
         // should appear as Reachable
-        Butler b = new Butler();
-        b.welcome();
     }
 }
